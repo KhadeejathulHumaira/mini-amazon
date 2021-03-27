@@ -9,7 +9,7 @@ import { db } from './components/Firebase'
 
 function App() {
     
-
+ 
   const[ cartItems,setCartItems]=useState([]);
 
   const getCartItems=()=>{
@@ -24,6 +24,7 @@ function App() {
       })
   }
   useEffect(()=>{
+    document.title="Mini Amazon"
     getCartItems()
   },[])
   return (
